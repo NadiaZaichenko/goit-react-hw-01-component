@@ -1,0 +1,13 @@
+.transaction_history{
+    border-collapse: collapse;
+    border: 3px solid #e96107;
+    border-radius: 10px;
+    display: block;
+}
+th{
+    border: 3px solid #e96107;
+    font-size: 34px;
+    padding: 27px;
+    background-color: #e96107;
+    color: #ffffff;
+}

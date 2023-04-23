@@ -1,0 +1,21 @@
+.stat_list{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.stat_list li:nth-child(1) {
+    background-color: rgb(255, 154, 71);
+}
+.stat_list li:nth-child(2) {
+    background-color: rgb(255, 227, 71);
+}
+.stat_list li:nth-child(3) {
+    background-color: rgb(184, 255, 71);
+}
+.stat_list li:nth-child(4) {
+    background-color: rgb(71, 255, 154);
+}
+.stat_list li:nth-child(5) {
+    background-color: rgb(71, 234, 255);
+}

@@ -1,0 +1,11 @@
+.items {
+    border: 3px solid #e96107;
+    font-size: 34px;
+    padding: 10px;
+}
+tbody tr:nth-child(odd) {
+    background-color: #ffc966;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #ffe2a4;
+  }
