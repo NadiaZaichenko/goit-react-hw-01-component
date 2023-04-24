@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import css from 'components/TransactionHistory/TransitionHistoryItem.module.css'
-export const TransitionHistoryItem = ({ id, type, amount, currency}) => {
+export const TransitionHistoryItem = ({ type, amount, currency}) => {
     return (<>
-    <tr key={id}>
+    <tr>
       <td className={css.items}>{type}</td>
       <td className={css.items}>{amount}</td>
       <td className={css.items}>{currency}</td>
@@ -13,8 +13,7 @@ export const TransitionHistoryItem = ({ id, type, amount, currency}) => {
 }
 
 TransitionHistoryItem.propTypes = {
-    id:  PropTypes.string,
-    type:  PropTypes.string,
-    amount:  PropTypes.string,
-    currency:  PropTypes.string
+    type:  PropTypes.string.isRequired,
+    amount:  PropTypes.string.isRequired,
+    currency:  PropTypes.string.isRequired
   }

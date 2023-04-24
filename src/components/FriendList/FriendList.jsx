@@ -13,8 +13,8 @@ name = {name}
 
 FriendList.propTypes = {
     freinds: PropTypes.arrayOf(PropTypes.exact({ 
-        avatar: PropTypes.string, 
-        name: PropTypes.string, 
-        isOnline: PropTypes.bool,
+        avatar: PropTypes.string.isRequired, 
+        name: PropTypes.string.isRequired, 
+        isOnline: PropTypes.bool.isRequired,
         id: PropTypes.number.isRequired}))
   }

@@ -2,9 +2,9 @@ import css from 'components/Statistics/Statistics.module.css'
 import { StatisticsList } from 'components/Statistics/StatisticsList'
 import PropTypes from 'prop-types'; 
 
-export const Statistics =( { stats } ) => {
+export const Statistics =( { stats, title } ) => {
 return <section className={css.statistic}>
-  {stats.title ? <h2 className={css.title}>{stats.title}</h2> : false}
+  {title && <h2 className={css.title}>{title}</h2>}
 
 
 <ul className={css.stat_list}>
@@ -17,7 +17,8 @@ return <section className={css.statistic}>
 
 Statistics.propTypes = {
   stats: PropTypes.arrayOf(PropTypes.exact({ 
-      id: PropTypes.string, 
-      label: PropTypes.string, 
-      percentage: PropTypes.number}))
+      id: PropTypes.string.isRequired, 
+      label: PropTypes.string.isRequired, 
+      percentage: PropTypes.number.isRequired,
+      title: PropTypes.string}))
 }

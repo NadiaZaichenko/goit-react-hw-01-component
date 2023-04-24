@@ -1,15 +1,14 @@
 import PropTypes from 'prop-types'; 
 import css from 'components/Statistics/StatisticsList.module.css'
-export const StatisticsList = ( {id, label, percentage}) => {
+export const StatisticsList = ( {label, percentage}) => {
  return ( <> 
- <li className={css.item} key={id}>
+ <li className={css.item}>
  <span className={css.label}>{label} </span>
  <span className={css.percentage}>{percentage} </span>
 </li>
 </> )
 }
 StatisticsList.propTypes = {
-     id: PropTypes.string, 
-     label: PropTypes.string, 
-     percentage: PropTypes.number,
+     label: PropTypes.string.isRequired, 
+     percentage: PropTypes.number.isRequired,
 }
