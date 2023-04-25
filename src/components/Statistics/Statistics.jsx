@@ -16,9 +16,9 @@ return <section className={css.statistic}>
 }
 
 Statistics.propTypes = {
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.exact({ 
       id: PropTypes.string.isRequired, 
       label: PropTypes.string.isRequired, 
-      percentage: PropTypes.number.isRequired,
-      title: PropTypes.string}))
+      percentage: PropTypes.number.isRequired}))
 }
